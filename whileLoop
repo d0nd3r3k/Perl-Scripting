@@ -1,0 +1,9 @@
+#!/bin/perl
+
+$num1 = 6;
+
+while ($num1 < 12){
+
+	print $num1;
+	$num1++;
+}

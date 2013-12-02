@@ -1,0 +1,23 @@
+#!/bin/perl
+
+$repeat= true;
+$total = 0;
+
+while($repeat){
+
+	print "Enter a Number: \n ";
+	$number=<STDIN>;
+	chomp $number;
+	if($number == 13){
+		last;
+	}
+	elsif(($number == 9) || ($number == 18)){
+		next;
+	}
+	else {
+		$total += $number;
+	}	
+
+}
+
+print "Sum of numbers is: " . $total . "\n";

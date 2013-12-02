@@ -1,0 +1,17 @@
+#!/bin/perl
+
+$randAnim= int(rand(3) + 1);
+
+$guess=<STDIN>;
+chomp $guess;
+
+@animals = ("Lion", "Zebra", "Horse");
+
+if ( $guess eq $animals[$randAnim - 1 ] ) {
+	
+	print "You guess it right! \n";
+}
+else {
+
+	print "Oops, try again \n";
+}

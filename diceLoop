@@ -1,0 +1,10 @@
+#!/bin/perl
+
+for ($x=0; $x<6;$x++) {
+	$rand = int(rand(6) +1);
+	$sum += $rand;
+	print $rand . "\n";
+	
+}
+
+print $sum . "\n";

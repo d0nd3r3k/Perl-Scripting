@@ -1,0 +1,12 @@
+#!/bin/perl
+
+$str1="Hello";
+$str2=<STDIN>;
+chomp $str2;
+
+if ($str1 eq $str2){
+	print "You guessed the string! \n";
+}
+else {
+	print "Ooops! \n";
+}

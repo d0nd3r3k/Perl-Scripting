@@ -1,0 +1,12 @@
+#!/bin/perl
+
+$inc = 0;
+
+while($inc<6){
+
+$rand = int(rand(6) + 1);
+$sum += $rand;
+print $rand . "\n";
+$inc++;
+}
+print "The Sum is: " . $sum . "\n";

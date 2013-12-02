@@ -1,0 +1,18 @@
+#!/bin/perl
+
+print "Enter Temperature in Celsius \n";
+
+$temp=<STDIN>;
+chomp $temp;
+
+$tempFa = 32 + (9*$temp)/5;
+
+if ( $tempFa < 40 ) {
+	print "Take a kabbout \n";
+}
+elsif ( $tempFa > 80  ) {
+	print "Forget about the bansen \n";
+}
+elsif (($tempFa < 80) && ($tempFa > 40)) {
+	print "Will be a great day \n";
+}

@@ -1,0 +1,22 @@
+#!/bin/perl
+$f=0;
+print "Enter max number: \n";
+$number=<STDIN>;
+chomp $number;
+for($x=1; $x <= $number; $x++){
+$p=0;
+	for($y=$x; $y >= 1; $y--){
+		if($x % $y == 0){
+			$p++;
+		}
+		if($p > 2){
+			last;
+		}	
+	}
+	if($p <= 2){
+		$f++;
+		print $x . " \n";
+	}
+}
+
+print "Found " . $f . " Prime Number \n";

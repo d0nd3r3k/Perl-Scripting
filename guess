@@ -1,0 +1,26 @@
+#!/bin/perl
+
+$num = int(rand(99) + 1);
+
+print "Try to guess the number! \n";
+print "Enter a number between 1 and 100: \n";
+
+$guess=<STDIN>;
+chomp $guess;
+
+if ( $guess == $num ){
+	print "You found it! ($num)";
+}
+
+elsif ( $guess > $num ) {
+	$diff = $guess - $num;
+	print "The Rand Var is: $num \n";
+	print " $diff Greater than Random Number!\n";
+}
+
+elsif ( $guess < $num ) {
+	$diff = $num - $guess;
+	print "The Rand Var is: $num \n";
+	print "$diff Lower than Random Number! \n";
+}
+

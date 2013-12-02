@@ -1,0 +1,39 @@
+#!/bin/perl
+
+$num1 = int(rand(9) + 1);
+$num2 = int(rand(9) + 1);
+$num3 = int(rand(9) + 1);
+
+$sum = $num1 + $num2 + $num3;
+#print "Enter a Number between 1 - 100 \n";
+
+#$sum = <STDIN>;
+#chomp $sum;
+
+if ( $sum > 15) {
+
+	print "$sum greater than 15 \n";
+}
+else {
+
+	if ( $sum == 15 ){
+		print "$sum is equal \n";
+	}
+	else {
+		if ($sum < 15 ){
+        		print "$sum is lower than 15 \n";
+		}
+	}
+}
+
+if ( $sum > 15 ){
+	print "$sum greater than 15 \n";
+}
+
+elsif ( $sum == 15 ){
+	print "$sum is equal to 15 \n";
+}
+
+elsif ( $sum < 15 ){
+	print "$sum is lower than 15 \n";
+}
